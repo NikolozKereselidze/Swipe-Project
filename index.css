@@ -320,7 +320,8 @@ a:hover {
 .integrations-section,
 .why-swipe-section,
 .global-section,
-.virtual-events-section {
+.virtual-events-section,
+.getting-started-section {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -593,4 +594,43 @@ a:hover {
   color: var(--text-dark);
   font-weight: 700;
   width: 50%;
+}
+
+/* GETTING STARTED SECTION */
+.getting-started-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.getting-started-section .col-left h2 {
+  font-size: var(--h3-size);
+  margin: 0;
+}
+
+.getting-started-section .col-left {
+  padding: 0 var(--spacing-xl) 0 0;
+}
+
+.getting-started-section .col-right {
+  flex-direction: row;
+}
+
+.getting-started-section .primary-button {
+  background-color: var(--purple-1);
+  margin: var(--spacing-md) 0;
+}
+
+.getting-started-section .primary-button:hover {
+  background-color: var(--primary-accent);
+}
+
+.getting-started-section .col-right .card {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 var(--spacing-sm) 0 0;
+  margin: 0 var(--spacing-md) 0 0;
+}
+
+.getting-started-section .col-right .card .secondary-button {
+  color: var(--purple-2);
+  padding-left: 0;
 }
