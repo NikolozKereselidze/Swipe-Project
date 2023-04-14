@@ -182,6 +182,23 @@ p {
   padding: 0 0 0 var(--spacing-md);
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) 0;
+}
+
+.card .icon {
+  height: 50px;
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.card h3 {
+  font-size: var(--h6-size);
+}
+
 /* BUTTON STYLES */
 
 a:hover {
@@ -319,7 +336,8 @@ a:hover {
   padding: var(--spacing-xl) 0;
 }
 
-.unified-platform-section h3 {
+.unified-platform-section h2 {
+  font-size: var(--h3-size);
   width: 50%;
   margin-bottom: var(--spacing-md);
 }
