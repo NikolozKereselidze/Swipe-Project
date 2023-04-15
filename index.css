@@ -748,9 +748,36 @@ a:hover {
   .section-container {
     padding: 0 var(--spacing-md);
   }
+
+  :root {
+    --h1-size: 80px;
+    --h1-height: 85px;
+  }
+
+  .hero-phone {
+    height: 550px;
+    transform: translateY(-60px);
+  }
+
+  .hero .col-left {
+    width: 60%;
+  }
+
+  .hero .col-right {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 850px) {
+  :root {
+    --h1-size: 70px;
+    --h1-height: 75px;
+  }
+
+  .hero-phone {
+    transform: translateY(-85px);
+  }
+
   .partners-grid img {
     width: 100%;
     height: auto;
@@ -768,11 +795,34 @@ a:hover {
 /* TABLET SIZE */
 @media only screen and (max-width: 768px) {
   :root {
-    --h1-size: 64px;
-    --h1-heigth: 72px;
+    --h1-size: 58px;
+    --h1-height: 65px;
 
     --h3-size: 34px;
-    --h3-heigth: 64px;
+    --h3-height: 64px;
+  }
+
+  /* NAVBAR STYLES */
+  .navbar {
+    margin: 0;
+  }
+
+  /* HERO STYLES */
+  #gradient-canvas {
+    height: 820px;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .hero .two-column {
+    align-items: center;
+  }
+
+  .hero-phone {
+    height: 450px;
+    transform: translateX(32px);
   }
 
   /* UNIFIED PLATFORM */
@@ -841,6 +891,10 @@ a:hover {
   .two-column .col-right {
     width: 100%;
     padding: 0;
+  }
+
+  .hero .two-column .hero-phone-container {
+    display: none;
   }
 
   .partners-grid {
